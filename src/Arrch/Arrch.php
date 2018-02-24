@@ -201,9 +201,8 @@ class Arrch
                 $curr_key = array_shift($keys);
                 $arrayValues = array_values($item);
                 $child = null;
-                if(is_array($item)){
-                    $values = array_values($item);
-                    $child = array_shift($values);
+                if (is_array($item)) {
+                    $child = array_shift($arrayValues);
                 }
 
                 // it's an array
